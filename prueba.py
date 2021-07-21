@@ -25,6 +25,7 @@ def palindromo(texto):
     lista = []
     
     for elementos in texto:
+        
         lista.append(elementos)
         
     textocontrario = lista[::-1]
@@ -56,9 +57,6 @@ mensaje()
 
 #decoradores
 
-
-
-    
 def FuncionA(FuncionB):
         
     print('mensaje de la funcion A')
@@ -74,7 +72,6 @@ def FuncionA(FuncionB):
 @FuncionA
 def saludar():
     print('HOLA MUNDO')
-
-
+    
 
 
