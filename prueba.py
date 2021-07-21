@@ -34,3 +34,47 @@ def palindromo(texto):
     return comparacion
 
 print(palindromo('ana'))
+
+
+#CLOSURE
+
+def closure(texto):
+    
+    info = texto
+    
+    def interna():
+        
+        print('funcion interna y el mesaje externo es %s' %(info))
+    
+    return interna
+
+
+mensaje = closure('hola mundo')
+
+mensaje()
+
+
+#decoradores
+
+
+
+    
+def FuncionA(FuncionB):
+        
+    print('mensaje de la funcion A')
+        
+    def FuncionC():
+            
+        print('mensaje inicial de la funcion C')
+        FuncionB()
+        print('mensaje final de la funcion C')
+            
+    return FuncionC()
+
+@FuncionA
+def saludar():
+    print('HOLA MUNDO')
+
+
+
+
